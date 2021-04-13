@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "inlineSourceMap": true,
+    "module": "none",
+    "moduleResolution": "Node",
+    "outDir": "dist",
+    "rootDir": ".",
+    "target": "ESNext"
+  },
+  "include": ["src/**/*.ts"]
+}
