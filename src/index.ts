@@ -13,10 +13,12 @@ const { PORT } = process.env;
 // Main entry point function
 async function main(): Promise<void> {
   // Connect to database (or exit)
-  await createConnection().catch((e) => {
-    console.error('Could not connect to database.', e);
-    process.exit(1);
-  });
+  await createConnection().catch(
+    /* istanbul ignore next */ (e) => {
+      console.error('Could not connect to database.', e);
+      process.exit(1);
+    }
+  );
 
   // Create main Express app
   const app = express();
