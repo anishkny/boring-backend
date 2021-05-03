@@ -26,5 +26,3 @@ jobs:
           node-version: 14
       - run: npm ci
       - run: npm test
-        env:
-          POSTGRES_URI: postgres://postgres:postgres@localhost:5432/postgres
